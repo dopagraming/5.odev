@@ -1,7 +1,7 @@
 import React, { useReducer, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./style.css";
-const About = () => {
+const Login = () => {
   function reducer(state, action) {
     switch (action.type) {
       case "increment":
@@ -33,4 +33,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Login;
