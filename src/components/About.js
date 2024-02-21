@@ -10,6 +10,8 @@ const About = () => {
         return state - 1;
       case "reset":
         return number;
+      default:
+        return state;
     }
   }
   const location = useLocation();
