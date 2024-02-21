@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.css";
-const Home = () => {
+const Login = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState();
   const [password, setPassword] = useState();
   const [vlaue, setValue] = useState(false);
   const Navigate = () => {
-    navigate("/about", { state: user });
+    navigate("/dash", { state: user });
   };
   const uncorrect = () => {
     return setValue(true);
@@ -50,4 +50,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Login;
